@@ -82,8 +82,44 @@ print()
 print("The last_name of students are:")
 iterate_dictionary_2("last_name", students)
 
-"""
 # /////////////////////////////////////////////////////////////
-print_desc("4.")
+print_desc("4. Iterate Through a Dictionary with List Values")
 
-"""
+dojo = {
+   'locations': ['San Jose', 'Seattle', 'Dallas', 'Chicago', 'Tulsa', 'DC', 'Burbank'],
+   'instructors': ['Michael', 'Amy', 'Eduardo', 'Josh', 'Graham', 'Patrick', 'Minh', 'Devon']
+}
+
+def printInfo (some_dict):
+    print (f"{len(some_dict['locations'])} LOCATIONS ************")
+    output = ""
+    for idx in range (len(some_dict['locations'])):
+        output += f"{idx+1}. {some_dict['locations'][idx]} "
+    print(output + "\n")
+
+    output = ""
+    print(f"{len(some_dict['instructors'])} INSTRUCTORS *************")
+    for idx in range (len(some_dict['instructors'])):
+        output += f"{idx+1}. {some_dict['instructors'][idx]} "
+    print(output)
+
+printInfo(dojo)
+# output:
+# 7 LOCATIONS
+# San Jose
+# Seattle
+# Dallas
+# Chicago
+# Tulsa
+# DC
+# Burbank
+    
+# 8 INSTRUCTORS
+# Michael
+# Amy
+# Eduardo
+# Josh
+# Graham
+# Patrick
+# Minh
+# Devon
