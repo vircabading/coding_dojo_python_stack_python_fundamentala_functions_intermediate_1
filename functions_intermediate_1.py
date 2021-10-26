@@ -46,11 +46,30 @@ z[0]['y'] = 30
 print(f"the new value of z is: {z}")
 
 
-"""
 # /////////////////////////////////////////////////////////////
-print_desc("2.")
+print_desc("2. Iterate Through a List of Directories")
 
+students = [
+         {'first_name':  'Michael', 'last_name' : 'Jordan'},
+         {'first_name' : 'John', 'last_name' : 'Rosales'},
+         {'first_name' : 'Mark', 'last_name' : 'Guillen'},
+         {'first_name' : 'KB', 'last_name' : 'Tonel'}
+    ]
 
+def iterate_dictionary(students):
+    for idx in range(len(students)):
+        print("first_name - " + students[idx]['first_name'] + ", last_name - " + students[idx]['last_name'])
+
+# should output: (it's okay if each key-value pair ends up on 2 separate lines;
+# bonus to get them to appear exactly as below!)
+# first_name - Michael, last_name - Jordan
+# first_name - John, last_name - Rosales
+# first_name - Mark, last_name - Guillen
+# first_name - KB, last_name - Tonel
+
+iterate_dictionary(students)
+
+"""
 # /////////////////////////////////////////////////////////////
 print_desc("3.")
 
