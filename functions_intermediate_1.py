@@ -69,11 +69,20 @@ def iterate_dictionary(students):
 
 iterate_dictionary(students)
 
-"""
 # /////////////////////////////////////////////////////////////
-print_desc("3.")
+print_desc("3. Get Values from a List of Dictionaries")
 
+def iterate_dictionary_2 (key_name, some_list):
+    for idx in range(len(some_list)):
+        print(some_list[idx][key_name])
 
+print("The first_name of students are:")
+iterate_dictionary_2('first_name', students)
+print()
+print("The last_name of students are:")
+iterate_dictionary_2("last_name", students)
+
+"""
 # /////////////////////////////////////////////////////////////
 print_desc("4.")
 
